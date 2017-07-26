@@ -7,7 +7,14 @@
 </template>
 
 <script>
+
+
+import warriors from './Doethe.vue'
+
 export default {
+ components: {
+    'doethe': warriors
+  },
   data () {
     return {
         title: 'Doethe app'
