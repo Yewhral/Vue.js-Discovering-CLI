@@ -1,28 +1,32 @@
 <template>
-  <div>
-  <h1> {{ title }} </h1>
-  <p> {{ greeting() }} </p>
-  <doethe></doethe>
-  </div>
+<div>
+  <app-header>
+  </app-header>
+
+<app-knights>
+</app-knights>
+
+  <app-footer>
+  </app-footer>
+</div>
 </template>
 
 <script>
 
 
-import warriors from './Doethe.vue'
+import Header from './components/Header.vue';
+import Knights from './components/Knights.vue';
+import Footer from './components/Footer.vue';
 
 export default {
- components: {
-    'doethe': warriors
+  components:{
+    'app-header': Header,
+    'app-knights': Knights,
+    'app-footer': Footer
   },
   data () {
     return {
-        title: 'Doethe app'
-    }
-  },
-  methods:{
-    greeting:function(){
-     return "hey! hya! hello.";
+
     }
   }
 }
@@ -30,9 +34,5 @@ export default {
 </script>
 
 <style>
-
-h1{
-color:orange;
-}
 
 </style>
