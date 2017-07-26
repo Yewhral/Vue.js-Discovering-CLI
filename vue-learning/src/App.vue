@@ -3,8 +3,8 @@
   <app-header>
   </app-header>
 
-<app-knights>
-</app-knights>
+  <app-knights v-bind:knights="knights">
+  </app-knights>
 
   <app-footer>
   </app-footer>
@@ -26,7 +26,14 @@ export default {
   },
   data () {
     return {
-
+      knights:[
+            {name:'King Arthur',speciality:'Freedom',show:false},
+            {name:'Lancelot',speciality:'Wisdom',show:false},
+            {name:'Percival',speciality:'Duty',show:false},
+            {name:'Gawain',speciality:'Power',show:false},
+            {name:'Bedivere',speciality:'Truth',show:false},
+            {name:'Tristan',speciality:'Justice',show:false}
+        ]
     }
   }
 }

@@ -12,16 +12,10 @@
 <script>
 
 export default {
+  props: ['knights'],
   data () {
     return {
-        knights:[
-            {name:'King Arthur',speciality:'Freedom',show:false},
-            {name:'Lancelot',speciality:'Wisdom',show:false},
-            {name:'Percival',speciality:'Duty',show:false},
-            {name:'Gawain',speciality:'Power',show:false},
-            {name:'Bedivere',speciality:'Truth',show:false},
-            {name:'Tristan',speciality:'Justice',show:false}
-        ]
+
     }
   }
 }
