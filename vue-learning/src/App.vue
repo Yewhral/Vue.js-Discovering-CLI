@@ -31,4 +31,8 @@ export default {
 
 <style>
 
+h1{
+color:orange;
+}
+
 </style>

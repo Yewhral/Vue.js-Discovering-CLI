@@ -1,8 +1,10 @@
 <template>
   <div>
+  <h1> availabile warriors </h1>
   <ul>
       <li v-for="warrior in warriors">{{ warrior }} </li>
   </ul>
+
   </div>
 </template>
 
@@ -21,6 +23,8 @@ export default {
 
 </script>
 
-<style>
-
+<style scoped>
+h1 {
+ color: red;
+}
 </style>
