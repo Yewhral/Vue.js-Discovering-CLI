@@ -1,7 +1,8 @@
 <template>
   <div>
   <h1> {{ title }} </h1>
-  <p> {{ greeting }} </p>
+  <p> {{ greeting() }} </p>
+  <doethe></doethe>
   </div>
 </template>
 
@@ -9,8 +10,12 @@
 export default {
   data () {
     return {
-        title: 'Encounter with Vue',
-        greeting: 'text'
+        title: 'Doethe app'
+    }
+  },
+  methods:{
+    greeting:function(){
+     return "hey! hya! hello.";
     }
   }
 }
