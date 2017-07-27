@@ -6,7 +6,7 @@
   <app-knights v-bind:knights="knights">
   </app-knights>
 
-  <app-footer>
+  <app-footer v-bind:title="title">
   </app-footer>
 </div>
 </template>
