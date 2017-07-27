@@ -1,6 +1,6 @@
 <template>
 <div>
-  <app-header>
+  <app-header v-bind:title="title" v-on:changeTitle="updateTitle($event)">
   </app-header>
 
   <app-knights v-bind:knights="knights">
@@ -33,7 +33,13 @@ export default {
             {name:'Gawain',speciality:'Power',show:false},
             {name:'Bedivere',speciality:'Truth',show:false},
             {name:'Tristan',speciality:'Justice',show:false}
-        ]
+        ],
+        title: 'Knights of the Green Vue'
+    }
+  },
+  methods: {
+    updateTitle: function(updatedTitle){
+        this.title = updatedTitle;
     }
   }
 }
